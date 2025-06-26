@@ -26,6 +26,12 @@
 
     QUnit.test('multiply()', assert => {
       assert.equal(multiply(2, 3), 6, '2 × 3 = 6');
+ bugfix/subtract-empty
+      feature/multiply-button
+      assert.equal(multiply(-2, 3), -6, '-2 × 3 = -6');
+      assert.equal(multiply(2.5, 2), 5, '2.5 × 2 = 5');
+
+ main
     });
 
     QUnit.test('subtract with empty inputs', assert => {
@@ -37,6 +43,10 @@
         'Please fill both inputs',
         'Shows warning if inputs are empty'
       );
+ bugfix/subtract-empty
+
+ main
+ main
     });
   </script>
 </body>
