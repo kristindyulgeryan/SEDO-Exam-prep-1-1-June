@@ -9,6 +9,14 @@ function subtract(a, b) {
 function multiply(a, b) {
   return a * b;
 }
+feature/multiply-button
+
+function calculateAndDisplay(fn) {
+  const a = Number(document.getElementById('a').value);
+  const b = Number(document.getElementById('b').value);
+  document.getElementById('result').textContent = fn(a, b);
+}
+
 
 function calculateAndDisplay(fn) {
   const rawA = document.getElementById('a').value;
@@ -29,6 +37,7 @@ chore/refactor-handlers
     .addEventListener('click', () => calculateAndDisplay(window[op]));
 });
 
+main
 document.getElementById('btn-add')
   .addEventListener('click', () => calculateAndDisplay(add));
 
@@ -36,4 +45,7 @@ document.getElementById('btn-subtract')
   .addEventListener('click', () => calculateAndDisplay(subtract));
 
 document.getElementById('btn-multiply')
+feature/multiply-button
+  .addEventListener('click', () => calculateAndDisplay(multiply));
   .addEventListener('click', () => calculateAndDisplay(multiply));main
+main
